@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog | EasyBiz Software Solutions</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Blog Page CSS -->
+    <link rel="stylesheet" href="../css/blog.css" />
+  </head>
+  <body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <ul class="top-contact-info">
+              <li><i class="fas fa-phone-alt"></i> +254 700 123456</li>
+              <li><i class="fas fa-envelope"></i> info@easybizsoftwares.com</li>
+            </ul>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <span class="top-location"
+              ><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top main-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo.png"
+            alt="EasyBiz Software Solutions"
+            class="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li>
+                  <a class="dropdown-item" href="services.html#software-dev"
+                    >Software Development</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html#web-design"
+                    >Web Design</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html#web-dev"
+                    >Web Development</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="ms-lg-3 mt-3 mt-lg-0">
+            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Blog Hero Section -->
+    <section class="blog-hero">
+      <div class="hero-overlay"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>EasyBiz <span class="text-highlight">Insights</span></h1>
+          <p class="lead">
+            Discover the latest trends, tips, and innovations in business
+            technology
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories py-4">
+      <div class="container">
+        <div class="category-buttons text-center">
+          <button class="btn category-btn active" data-category="all">
+            All Articles
+          </button>
+          <button class="btn category-btn" data-category="technology">
+            Technology
+          </button>
+          <button class="btn category-btn" data-category="business">
+            Business Growth
+          </button>
+          <button class="btn category-btn" data-category="development">
+            Development
+          </button>
+          <button class="btn category-btn" data-category="case-studies">
+            Case Studies
+          </button>
+          <button class="btn category-btn" data-category="announcements">
+            Announcements
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="featured-post py-5">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <div class="featured-image">
+              <img
+                src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                alt="Featured Post"
+                class="img-fluid rounded"
+              />
+              <div class="post-badge">Featured</div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="featured-content">
+              <span class="post-category">Technology</span>
+              <h2>
+                The Future of Retail: How AI is Transforming Kenyan Businesses
+              </h2>
+              <p class="post-excerpt">
+                Discover how artificial intelligence is revolutionizing the
+                retail sector in Kenya, from inventory management to
+                personalized customer experiences. Learn how local businesses
+                can leverage these technologies to stay competitive.
+              </p>
+              <div class="post-meta">
+                <div class="author-info">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Author"
+                    class="author-img"
+                  />
+                  <div>
+                    <span class="author-name">Sarah Kamau</span>
+                    <span class="post-date">June 15, 2023 • 8 min read</span>
+                  </div>
+                </div>
+                <a href="blog-post.html" class="btn btn-primary"
+                  >Read Article</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-grid py-5 bg-light">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">
+            Latest <span class="text-highlight">Articles</span>
+          </h2>
+          <p class="section-subtitle">Stay updated with our expert insights</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Blog Post 1 -->
+          <div class="col-lg-4 col-md-6 blog-post" data-category="technology">
+            <div class="post-card">
+              <div class="post-image">
+                <img
+                  src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  alt="Cloud Computing"
+                  class="img-fluid"
+                />
+                <div class="post-category">Technology</div>
+              </div>
+              <div class="post-content">
+                <h3>
+                  Cloud Computing for Kenyan SMEs: Benefits and Implementation
+                </h3>
+                <p class="post-excerpt">
+                  Explore how small and medium enterprises in Kenya can leverage
+                  cloud computing to reduce costs, improve scalability, and
+                  enhance collaboration.
+                </p>
+                <div class="post-meta">
+                  <div class="author-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/32.jpg"
+                      alt="Author"
+                      class="author-img"
+                    />
+                    <span class="author-name">James Mwangi</span>
+                  </div>
+                  <span class="post-date">May 28, 2023</span>
+                </div>
+                <a href="blog-post.html" class="btn btn-outline-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Post 2 -->
+          <div class="col-lg-4 col-md-6 blog-post" data-category="business">
+            <div class="post-card">
+              <div class="post-image">
+                <img
+                  src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  alt="POS Systems"
+                  class="img-fluid"
+                />
+                <div class="post-category">Business Growth</div>
+              </div>
+              <div class="post-content">
+                <h3>How POS Systems Can Boost Your Retail Business Revenue</h3>
+                <p class="post-excerpt">
+                  Discover the key features of modern POS systems that help
+                  Kenyan retailers increase sales, manage inventory, and
+                  understand customer behavior.
+                </p>
+                <div class="post-meta">
+                  <div class="author-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/68.jpg"
+                      alt="Author"
+                      class="author-img"
+                    />
+                    <span class="author-name">Amina Omondi</span>
+                  </div>
+                  <span class="post-date">May 15, 2023</span>
+                </div>
+                <a href="blog-post.html" class="btn btn-outline-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Post 3 -->
+          <div class="col-lg-4 col-md-6 blog-post" data-category="development">
+            <div class="post-card">
+              <div class="post-image">
+                <img
+                  src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  alt="Mobile Apps"
+                  class="img-fluid"
+                />
+                <div class="post-category">Development</div>
+              </div>
+              <div class="post-content">
+                <h3>
+                  Building Mobile Apps for the Kenyan Market: Key Considerations
+                </h3>
+                <p class="post-excerpt">
+                  Learn what it takes to develop successful mobile applications
+                  for Kenyan users, from UI/UX design to performance
+                  optimization for low-bandwidth areas.
+                </p>
+                <div class="post-meta">
+                  <div class="author-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/45.jpg"
+                      alt="Author"
+                      class="author-img"
+                    />
+                    <span class="author-name">David Njoroge</span>
+                  </div>
+                  <span class="post-date">April 30, 2023</span>
+                </div>
+                <a href="blog-post.html" class="btn btn-outline-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Post 4 -->
+          <div class="col-lg-4 col-md-6 blog-post" data-category="case-studies">
+            <div class="post-card">
+              <div class="post-image">
+                <img
+                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  alt="Hotel Management"
+                  class="img-fluid"
+                />
+                <div class="post-category">Case Studies</div>
+              </div>
+              <div class="post-content">
+                <h3>
+                  Case Study: How We Transformed a Nairobi Hotel's Operations
+                </h3>
+                <p class="post-excerpt">
+                  A detailed look at how our custom hotel management system
+                  helped a local hotel increase efficiency and guest
+                  satisfaction by 40%.
+                </p>
+                <div class="post-meta">
+                  <div class="author-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/50.jpg"
+                      alt="Author"
+                      class="author-img"
+                    />
+                    <span class="author-name">Grace Wambui</span>
+                  </div>
+                  <span class="post-date">April 22, 2023</span>
+                </div>
+                <a href="blog-post.html" class="btn btn-outline-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Post 5 -->
+          <div
+            class="col-lg-4 col-md-6 blog-post"
+            data-category="announcements"
+          >
+            <div class="post-card">
+              <div class="post-image">
+                <img
+                  src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  alt="New Feature"
+                  class="img-fluid"
+                />
+                <div class="post-category">Announcements</div>
+              </div>
+              <div class="post-content">
+                <h3>
+                  Introducing M-Pesa Integration in EasyBiz POS Version 2.5
+                </h3>
+                <p class="post-excerpt">
+                  We're excited to announce seamless M-Pesa integration in our
+                  latest POS system update, making transactions smoother than
+                  ever for Kenyan businesses.
+                </p>
+                <div class="post-meta">
+                  <div class="author-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/men/60.jpg"
+                      alt="Author"
+                      class="author-img"
+                    />
+                    <span class="author-name">Peter Maina</span>
+                  </div>
+                  <span class="post-date">April 10, 2023</span>
+                </div>
+                <a href="blog-post.html" class="btn btn-outline-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog Post 6 -->
+          <div class="col-lg-4 col-md-6 blog-post" data-category="technology">
+            <div class="post-card">
+              <div class="post-image">
+                <img
+                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                  alt="Data Security"
+                  class="img-fluid"
+                />
+                <div class="post-category">Technology</div>
+              </div>
+              <div class="post-content">
+                <h3>
+                  Essential Cybersecurity Practices for Kenyan Businesses in
+                  2023
+                </h3>
+                <p class="post-excerpt">
+                  Protect your business from growing cyber threats with these
+                  practical security measures tailored for the Kenyan digital
+                  landscape.
+                </p>
+                <div class="post-meta">
+                  <div class="author-info">
+                    <img
+                      src="https://randomuser.me/api/portraits/women/33.jpg"
+                      alt="Author"
+                      class="author-img"
+                    />
+                    <span class="author-name">Lilian Atieno</span>
+                  </div>
+                  <span class="post-date">March 28, 2023</span>
+                </div>
+                <a href="blog-post.html" class="btn btn-outline-primary"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="#" class="btn btn-primary btn-lg">Load More Articles</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h2>Stay Updated With Our Latest Insights</h2>
+            <p class="lead">
+              Subscribe to our newsletter for regular updates on business
+              technology trends
+            </p>
+            <form class="newsletter-form">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your email address"
+                  required
+                />
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+              <small class="form-text"
+                >We'll never share your email with anyone else.</small
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-content">
+          <div class="row">
+            <!-- Company Info -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <div class="footer-about">
+                <img
+                  src="images/logo1.png"
+                  alt="EasyBiz Software Solutions"
+                  class="footer-logo mb-3"
+                />
+                <p class="footer-text">
+                  Empowering Kenyan businesses with innovative technology
+                  solutions since 2020.
+                </p>
+
+                <div class="social-links mt-4">
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h3 class="footer-heading">Quick Links</h3>
+              <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+            </div>
+
+            <!-- Our Products -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h3 class="footer-heading">Our Products</h3>
+              <ul class="footer-links">
+                <li><a href="products.html#pos">EasyBiz POS System</a></li>
+                <li>
+                  <a href="products.html#hotel">Hotel Management System</a>
+                </li>
+                <li>
+                  <a href="products.html#invoice">Invoice Generator Pro</a>
+                </li>
+                <li><a href="products.html#inventory">Inventory Manager</a></li>
+                <li>
+                  <a href="products.html#accounting">EasyBiz Accounting</a>
+                </li>
+                <li><a href="products.html#crm">Customer CRM</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-3 col-md-6">
+              <h3 class="footer-heading">Contact Us</h3>
+              <ul class="footer-contact-info">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Nairobi, Kenya</span>
+                </li>
+                <li>
+                  <i class="fas fa-phone-alt"></i>
+                  <span>+254 700 123 456</span>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <span>info@easybizsoftwares.com</span>
+                </li>
+                <li>
+                  <i class="fas fa-clock"></i>
+                  <span>Mon-Fri: 8:00 AM - 5:00 PM</span>
+                </li>
+              </ul>
+
+              <div class="footer-newsletter mt-4">
+                <h4>Subscribe to Newsletter</h4>
+                <form class="newsletter-form">
+                  <input type="email" placeholder="Your Email" required />
+                  <button type="submit">
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="copyright-text">
+                &copy; 2025 EasyBiz Software Solutions. All Rights Reserved.
+              </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="../js/script.js"></script>
+    <!-- Blog JS -->
+    <script src="../js/blog.js"></script>
+  </body>
+</html>

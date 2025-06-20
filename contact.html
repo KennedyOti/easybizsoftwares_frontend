@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | EasyBiz Software Solutions</title>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome (Icons) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts (Poppins & Montserrat) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <!-- Top Contact Bar -->
+    <div class="top-bar">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <ul class="top-contact-info">
+              <li><i class="fas fa-phone-alt"></i> +254 700 123456</li>
+              <li><i class="fas fa-envelope"></i> info@easybizsoftwares.com</li>
+            </ul>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <span class="top-location"
+              ><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top main-navbar"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="images/logo.png"
+            alt="EasyBiz Software Solutions"
+            class="logo"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="servicesDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                <li>
+                  <a class="dropdown-item" href="services.html#software-dev"
+                    >Software Development</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html#web-design"
+                    >Web Design</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="services.html#web-dev"
+                    >Web Development</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="services.html">All Services</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <div class="ms-lg-3 mt-3 mt-lg-0">
+            <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1>Let's Build Something <span>Amazing</span> Together</h1>
+            <p class="lead">
+              Whether you have a question about our services, need a custom
+              quote, or want to discuss your project, our team is ready to help.
+            </p>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <i class="fas fa-phone-alt"></i>
+                <div>
+                  <h4>Call Us</h4>
+                  <p>+254 700 123456</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <h4>Email Us</h4>
+                  <p>info@easybizsoftwares.com</p>
+                </div>
+              </div>
+              <div class="contact-method">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <h4>Visit Us</h4>
+                  <p>Nairobi, Kenya</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="contact-form-wrapper">
+              <h3>Send Us a Message</h3>
+              <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Enter your full name"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Enter your email address"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="quote">Request a Quote</option>
+                    <option value="support">Technical Support</option>
+                    <option value="partnership">Partnership Opportunity</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="message">Your Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="How can we help you?"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">
+                  Send Message <i class="fas fa-paper-plane ms-2"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Our <span>Location</span></h2>
+          <p class="section-description">
+            Visit our office in Nairobi for a face-to-face consultation
+          </p>
+        </div>
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8084773955137!2d36.821159314753976!3d-1.288385835980925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d664f5f7e7%3A0x4a3757f4a0d8c7b5!2sNairobi%20City%20Centre%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1620000000000!5m2!1sen!2ske"
+            width="100%"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+          <div class="map-overlay">
+            <div class="map-info">
+              <h4><i class="fas fa-building"></i> EasyBiz Headquarters</h4>
+              <p><i class="fas fa-map-marker-alt"></i> Nairobi City Centre</p>
+              <p><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 5:00 PM</p>
+              <p><i class="fas fa-phone-alt"></i> +254 700 123456</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <h2>Frequently Asked <span>Questions</span></h2>
+          <p class="section-description">
+            Find quick answers to common questions about our services and
+            support
+          </p>
+        </div>
+        <div class="accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+              >
+                How quickly can you respond to my inquiry?
+              </button>
+            </h3>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                We typically respond to all inquiries within 24 hours during
+                business days. For urgent matters, please call our support line
+                for immediate assistance.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                What information should I include in my project inquiry?
+              </button>
+            </h3>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Please include as much detail as possible about your project
+                requirements, timeline, and budget. The more information you
+                provide, the better we can tailor our response to your specific
+                needs.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Do you offer free consultations?
+              </button>
+            </h3>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes! We offer free 30-minute initial consultations to discuss
+                your project needs and determine how we can help. Schedule yours
+                by filling out our contact form or calling our office.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                What industries do you specialize in?
+              </button>
+            </h3>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                We specialize in providing software solutions for retail,
+                hospitality, service providers, and small to medium enterprises
+                across various industries in Kenya. Our solutions are tailored
+                to meet the unique needs of African businesses.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                How do I get support after implementation?
+              </button>
+            </h3>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                We provide 24/7 support through multiple channels including
+                phone, email, and WhatsApp. All our solutions come with a
+                dedicated support team and comprehensive documentation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Transform Your Business?</h2>
+          <p>
+            Get in touch with our team today to discuss how our software
+            solutions can help your business grow.
+          </p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn btn-light">Contact Us</a>
+            <a href="tel:+254700123456" class="btn btn-outline-light"
+              >Call Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-content">
+          <div class="row">
+            <!-- Company Info -->
+            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <div class="footer-about">
+                <img
+                  src="images/logo1.png"
+                  alt="EasyBiz Software Solutions"
+                  class="footer-logo mb-3"
+                />
+                <p class="footer-text">
+                  Empowering Kenyan businesses with innovative technology
+                  solutions since 2020.
+                </p>
+
+                <div class="social-links mt-4">
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-twitter"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="social-link"
+                    ><i class="fab fa-youtube"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h3 class="footer-heading">Quick Links</h3>
+              <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+            </div>
+
+            <!-- Our Products -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h3 class="footer-heading">Our Products</h3>
+              <ul class="footer-links">
+                <li><a href="products.html#pos">EasyBiz POS System</a></li>
+                <li>
+                  <a href="products.html#hotel">Hotel Management System</a>
+                </li>
+                <li>
+                  <a href="products.html#invoice">Invoice Generator Pro</a>
+                </li>
+                <li><a href="products.html#inventory">Inventory Manager</a></li>
+                <li>
+                  <a href="products.html#accounting">EasyBiz Accounting</a>
+                </li>
+                <li><a href="products.html#crm">Customer CRM</a></li>
+              </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-3 col-md-6">
+              <h3 class="footer-heading">Contact Us</h3>
+              <ul class="footer-contact-info">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Nairobi, Kenya</span>
+                </li>
+                <li>
+                  <i class="fas fa-phone-alt"></i>
+                  <span>+254 700 123 456</span>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <span>info@easybizsoftwares.com</span>
+                </li>
+                <li>
+                  <i class="fas fa-clock"></i>
+                  <span>Mon-Fri: 8:00 AM - 5:00 PM</span>
+                </li>
+              </ul>
+
+              <div class="footer-newsletter mt-4">
+                <h4>Subscribe to Newsletter</h4>
+                <form class="newsletter-form">
+                  <input type="email" placeholder="Your Email" required />
+                  <button type="submit">
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+              <p class="copyright-text">
+                &copy; 2025 EasyBiz Software Solutions. All Rights Reserved.
+              </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+              <div class="footer-legal-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS + Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

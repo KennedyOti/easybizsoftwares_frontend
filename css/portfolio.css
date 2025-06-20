@@ -1,0 +1,415 @@
+/* Portfolio Page Specific Styles */
+
+/* Portfolio Hero Section */
+.portfolio-hero {
+  position: relative;
+  height: 70vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+  color: var(--white);
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 62, 42, 0.85);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.portfolio-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: var(--white);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-hero .text-highlight {
+  color: var(--lime-green);
+  position: relative;
+}
+
+.portfolio-hero .text-highlight:after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: var(--primary-green);
+  opacity: 0.7;
+  z-index: -1;
+  border-radius: 3px;
+}
+
+.portfolio-hero .lead {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-hero .btn {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Portfolio Filters */
+.portfolio-filters {
+  background-color: var(--white);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(46, 139, 87, 0.2);
+  color: var(--dark-gray);
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: var(--primary-green);
+  color: var(--white);
+  border-color: var(--primary-green);
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+  background-color: var(--gray);
+}
+
+.project-card {
+  background-color: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(46, 139, 87, 0.1);
+}
+
+.project-image {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.05);
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 139, 87, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.view-project {
+  color: var(--white);
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.view-project:hover {
+  transform: scale(1.2);
+}
+
+.project-content {
+  padding: 25px;
+}
+
+.project-category {
+  display: inline-block;
+  background-color: rgba(46, 139, 87, 0.1);
+  color: var(--primary-green);
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.project-content h3 {
+  font-size: 1.5rem;
+  color: var(--dark-green);
+  margin-bottom: 15px;
+}
+
+.project-description {
+  color: var(--dark-gray);
+  margin-bottom: 20px;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.project-tech span {
+  background-color: var(--gray);
+  color: var(--dark-gray);
+  padding: 5px 12px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+}
+
+.btn-outline-primary {
+  border: 2px solid var(--primary-green);
+  color: var(--primary-green);
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-green);
+  color: var(--white);
+}
+
+/* Testimonials Section */
+.portfolio-testimonials {
+  background-color: var(--white);
+}
+
+.testimonial-slider {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonial-item {
+  padding: 0 15px;
+}
+
+.testimonial-content {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.quote-icon {
+  font-size: 3rem;
+  color: rgba(46, 139, 87, 0.1);
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.testimonial-content p {
+  font-style: italic;
+  color: var(--dark-gray);
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.client-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-green);
+}
+
+.client-info h4 {
+  font-size: 1.1rem;
+  color: var(--dark-green);
+  margin-bottom: 5px;
+}
+
+.client-info p {
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+  margin-bottom: 0;
+  font-style: normal;
+}
+
+/* CTA Section */
+.portfolio-cta {
+  background-color: var(--light-green);
+  color: var(--white);
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.cta-content .lead {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons .btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.cta-buttons .btn-outline-light {
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.cta-buttons .btn-outline-light:hover {
+  background-color: var(--white);
+  color: var(--dark-green);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1199.98px) {
+  .portfolio-hero h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .portfolio-hero {
+    height: auto;
+    min-height: auto;
+    padding: 120px 0;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .portfolio-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .portfolio-hero .lead {
+    font-size: 1.1rem;
+  }
+
+  .filter-buttons {
+    gap: 8px;
+  }
+
+  .filter-btn {
+    padding: 6px 15px;
+    font-size: 0.9rem;
+  }
+
+  .testimonial-content {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .portfolio-hero {
+    padding: 100px 0;
+  }
+
+  .portfolio-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .cta-buttons .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .cta-buttons .btn:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* Slick Slider Custom Styles */
+.slick-dots {
+  bottom: -50px;
+}
+
+.slick-dots li button:before {
+  font-size: 10px;
+  color: var(--primary-green);
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--primary-green);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--primary-green);
+}
