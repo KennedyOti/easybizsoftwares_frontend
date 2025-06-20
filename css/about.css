@@ -1,0 +1,488 @@
+/* About Page Specific Styles */
+
+/* About Hero Section with Full Background */
+.about-hero {
+  position: relative;
+  height: 80vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--white);
+  overflow: hidden;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 62, 42, 0.85);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.about-hero h1 {
+  font-size: 3 rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: var(--white);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero .text-highlight {
+  color: var(--lime-green);
+  position: relative;
+}
+
+.about-hero .text-highlight:after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: var(--primary-green);
+  opacity: 0.7;
+  z-index: -1;
+  border-radius: 3px;
+}
+
+.about-hero .lead {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.about-hero .btn {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Who We Are Section */
+.who-we-are {
+  padding: 100px 0;
+  background-color: var(--white);
+}
+
+.about-image-container {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.about-image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  background: var(--primary-green);
+  color: var(--white);
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(46, 139, 87, 0.3);
+}
+
+.experience-badge span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+}
+
+.experience-badge small {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-green);
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: var(--primary-green);
+  border-radius: 2px;
+}
+
+.highlight-text {
+  font-size: 1.1rem;
+  color: var(--dark-green);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.tech-stack {
+  margin-top: 30px;
+}
+
+.tech-stack h4 {
+  font-size: 1.2rem;
+  color: var(--dark-green);
+  margin-bottom: 15px;
+}
+
+.tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-badges span {
+  background-color: var(--gray);
+  color: var(--dark-green);
+  padding: 8px 15px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.impact-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-green);
+  line-height: 1;
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: var(--dark-gray);
+  font-weight: 500;
+}
+
+/* Mission Vision Section */
+.mission-vision {
+  padding: 80px 0;
+  background-color: var(--gray);
+}
+
+.section-header {
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--dark-gray);
+  margin-top: 10px;
+}
+
+.purpose-card {
+  background-color: var(--white);
+  padding: 40px 30px;
+  border-radius: 12px;
+  height: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.purpose-card.mission {
+  border-top: 4px solid var(--primary-green);
+}
+
+.purpose-card.vision {
+  border-top: 4px solid var(--light-green);
+}
+
+.purpose-card.values {
+  border-top: 4px solid var(--lime-green);
+}
+
+.purpose-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  color: var(--white);
+}
+
+.purpose-card.mission .card-icon {
+  background-color: var(--primary-green);
+}
+
+.purpose-card.vision .card-icon {
+  background-color: var(--light-green);
+}
+
+.purpose-card.values .card-icon {
+  background-color: var(--lime-green);
+}
+
+.purpose-card h3 {
+  font-size: 1.5rem;
+  color: var(--dark-green);
+  margin-bottom: 20px;
+}
+
+.purpose-card p {
+  color: var(--dark-gray);
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 100px 0;
+  background-color: var(--white);
+}
+
+.testimonial-card {
+  background-color: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(46, 139, 87, 0.1);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(46, 139, 87, 0.1);
+}
+
+.testimonial-body {
+  padding: 30px;
+  position: relative;
+}
+
+.quote-icon {
+  font-size: 3rem;
+  color: rgba(46, 139, 87, 0.1);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.testimonial-body p {
+  font-style: italic;
+  color: var(--dark-gray);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0;
+}
+
+.testimonial-author {
+  padding: 20px;
+  background-color: rgba(46, 139, 87, 0.03);
+  border-top: 1px solid rgba(46, 139, 87, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.author-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 3px solid var(--primary-green);
+}
+
+.author-info h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: var(--dark-green);
+}
+
+.author-info p {
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+  margin-bottom: 0;
+}
+
+.rating {
+  color: var(--primary-green);
+  margin-top: 5px;
+}
+
+/* CTA Section */
+.about-cta {
+  padding: 80px 0;
+  background-color: var(--light-green);
+  color: var(--white);
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.cta-content .lead {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-buttons .btn {
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.cta-buttons .btn-outline-light {
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.cta-buttons .btn-outline-light:hover {
+  background-color: var(--white);
+  color: var(--dark-green);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1199.98px) {
+  .about-hero h1 {
+    font-size: 3rem;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .about-hero {
+    height: auto;
+    min-height: auto;
+    padding: 120px 0;
+    background-attachment: scroll;
+  }
+
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .impact-stats {
+    gap: 20px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero .lead {
+    font-size: 1.1rem;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .experience-badge {
+    right: 10px;
+    padding: 10px 15px;
+  }
+
+  .experience-badge span {
+    font-size: 1.5rem;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .about-hero {
+    padding: 100px 0;
+    text-align: center;
+  }
+
+  .about-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .impact-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .cta-buttons .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .cta-buttons .btn:last-child {
+    margin-bottom: 0;
+  }
+
+  .testimonial-author {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .author-img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
